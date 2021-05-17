@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <div id="blog-post">
+  <b-container>
     <h1>{{ post.data.title }}</h1>
     <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
     <div v-html="post.data.body"></div>
@@ -45,5 +45,5 @@ export default {
     >
       {{ post.meta.next_post.title }}
     </router-link>
-  </div>
+  </b-container>
 </template>
