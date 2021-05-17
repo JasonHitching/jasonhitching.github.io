@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div>
+    <b-navbar variant="dark" type="dark">
+      <b-navbar-brand to="/"> Jason Hitching </b-navbar-brand>
+      <b-nav>
+        <b-nav-item to="/">home</b-nav-item>
+        <b-nav-item to="/about">about</b-nav-item>
+        <b-nav-item to="/blog/">blog</b-nav-item>
+        <b-nav-item>contact me</b-nav-item>
+      </b-nav>
+    </b-navbar>
+
     <router-view />
   </div>
 </template>
@@ -15,18 +21,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
