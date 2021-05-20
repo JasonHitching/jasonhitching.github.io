@@ -18,10 +18,32 @@
     <footer class="border-top">
       <b-container class="text-center">
         <h1>FOOTER</h1>
+        <button
+          v-on:click="scrollToTop"
+          style="margin-bottom: 16px"
+          class="mx-auto"
+          id="backToTop"
+        >
+          ☝️
+        </button>
       </b-container>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      var rootElement = document.documentElement;
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  }
+};
+</script>
 
 <style>
 #app {
@@ -30,5 +52,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#backToTop {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 48px;
+  width: 48px;
 }
 </style>

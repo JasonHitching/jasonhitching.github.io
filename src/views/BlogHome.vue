@@ -14,7 +14,7 @@
               <small class="font-italic text-muted">{{ post.published }}</small>
             </router-link>
           </b-card>
-          <hr class="mx-auto blog-hr" />
+          <hr class="blog-hr" />
         </b-col>
       </b-row>
     </div>
@@ -23,6 +23,7 @@
 
 <script>
 import { butter } from "@/buttercms.js";
+
 export default {
   name: "blog-home",
   data() {
