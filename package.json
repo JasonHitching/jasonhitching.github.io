@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.5.0",
     "bootstrap-vue": "^2.21.2",
     "buttercms": "^1.2.7",
     "core-js": "^3.6.5",
