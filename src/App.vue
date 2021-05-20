@@ -14,6 +14,12 @@
       </b-collapse>
     </b-navbar>
     <router-view />
+
+    <footer class="border-top">
+      <b-container class="text-center">
+        <h1>FOOTER</h1>
+      </b-container>
+    </footer>
   </div>
 </template>
 
