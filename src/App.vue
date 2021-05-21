@@ -13,7 +13,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <router-view />
+    <router-view class="content" />
 
     <footer class="border-top">
       <b-container class="text-center">
@@ -63,5 +63,9 @@ export default {
   font-size: 20px;
   line-height: 48px;
   width: 48px;
+}
+
+.content {
+  min-height: calc(100vh - 170px);
 }
 </style>
