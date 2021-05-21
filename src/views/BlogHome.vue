@@ -1,8 +1,15 @@
 <template>
   <b-container>
+    <div style="width: 66%" class="text-center mx-auto mt-5 mb-5">
+      <div style="border-top: 1px solid black; border-bottom: 1px solid black">
+        <h1 class="display-4">Blog</h1>
+      </div>
+      <p class="lead mt-3">Blog about all things bloggy</p>
+    </div>
     <div v-for="(post, index) in posts" :key="post.slug + '_' + index">
       <b-row>
-        <b-col class="mx-auto col-lg-8 col-md-10">
+        <b-col class="mx-auto col-lg-8 col-md-10"
+          ><hr class="blog-hr" />
           <b-card class="border-0">
             <router-link :to="'/blog/' + post.slug">
               <b-card-title class="h2 text-dark mt-4 font-weight-bold">{{
@@ -14,7 +21,6 @@
               <small class="font-italic text-muted">{{ post.published }}</small>
             </router-link>
           </b-card>
-          <hr class="blog-hr" />
         </b-col>
       </b-row>
     </div>

@@ -17,15 +17,14 @@
 
     <footer class="border-top">
       <b-container class="text-center">
-        <h1>FOOTER</h1>
-        <button
-          v-on:click="scrollToTop"
-          style="margin-bottom: 16px"
-          class="mx-auto"
-          id="backToTop"
-        >
+        <button v-on:click="scrollToTop" class="mx-auto mt-3" id="backToTop">
           ☝️
         </button>
+        <div class="mx-auto" style="max-width: 30%">
+          <a href="https://buttercms.com"
+            ><b-img fluid src="./assets/butter.png"></b-img
+          ></a>
+        </div>
       </b-container>
     </footer>
   </div>
