@@ -1,26 +1,35 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" variant="light" type="light">
-      <b-navbar-brand to="/"> Jason Hitching </b-navbar-brand>
+    <b-navbar toggleable="lg" variant="dark" type="dark">
+      <b-container>
+        <b-navbar-brand class="text-monospace" to="/">
+          Jason Hitching
+        </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item to="/">home</b-nav-item>
-          <b-nav-item to="/about">about</b-nav-item>
-          <b-nav-item to="/blog/">blog</b-nav-item>
-          <b-nav-item>contact me</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav class="ml-auto text-monospace">
+            <b-nav-item to="/">home</b-nav-item>
+            <b-nav-item to="/about">about</b-nav-item>
+            <b-nav-item to="/blog/">blog</b-nav-item>
+            <b-nav-item>contact me</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-container>
     </b-navbar>
     <router-view class="content" />
 
     <footer class="border-top">
       <b-container class="text-center">
-        <button v-on:click="scrollToTop" class="mx-auto mt-3" id="backToTop">
+        <button
+          animation="throb"
+          v-on:click="scrollToTop"
+          class="mx-auto mt-3"
+          id="backToTop"
+        >
           ☝️
         </button>
-        <div class="mx-auto" style="max-width: 30%">
+        <div class="mx-auto" style="width: 250px">
           <a href="https://buttercms.com"
             ><b-img fluid src="./assets/butter.png"></b-img
           ></a>
