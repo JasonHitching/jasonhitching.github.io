@@ -8,7 +8,7 @@
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto text-monospace">
+          <b-navbar-nav class="mt-2 mb-2 ml-auto text-monospace">
             <b-nav-item to="/">home</b-nav-item>
             <b-nav-item to="/about">about</b-nav-item>
             <b-nav-item to="/blog/">blog</b-nav-item>
@@ -18,17 +18,27 @@
       </b-container>
     </b-navbar>
     <router-view class="content" />
+    <b-row align-h="end" class="mr-3 mb-3">
+      <button v-on:click="scrollToTop" id="backToTop">☝️</button>
+    </b-row>
 
-    <footer class="border-top">
+    <footer style="background-color: #343a40" class="border-top">
       <b-container class="text-center">
-        <button
-          animation="throb"
-          v-on:click="scrollToTop"
-          class="mx-auto mt-3"
-          id="backToTop"
-        >
-          ☝️
-        </button>
+        <b-navbar class="p-0">
+          <b-navbar-nav class="mx-auto">
+            <b-nav-item
+              style="font-size: 2rem"
+              href="https://github.com/JasonHitching"
+              ><i class="bi bi-github text-white"></i
+            ></b-nav-item>
+            <b-nav-item
+              style="font-size: 2rem"
+              href="https://www.linkedin.com/in/jason-hitching-2678b514a/"
+              ><i class="bi bi-linkedin text-white"></i
+            ></b-nav-item>
+          </b-navbar-nav>
+        </b-navbar>
+
         <div class="mx-auto" style="width: 250px">
           <a href="https://buttercms.com"
             ><b-img fluid src="./assets/butter.png"></b-img
@@ -71,6 +81,11 @@ export default {
   font-size: 20px;
   line-height: 48px;
   width: 48px;
+}
+
+.button-contain {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .content {

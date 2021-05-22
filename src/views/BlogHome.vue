@@ -8,21 +8,28 @@
     </div>
     <div v-for="(post, index) in posts" :key="post.slug + '_' + index">
       <b-row>
-        <b-col class="mx-auto col-lg-8 col-md-10"
-          ><hr class="blog-hr" />
-          <b-card class="border-0">
-            <router-link :to="'/blog/' + post.slug">
-              <b-img :src="post.featured_image" fluid></b-img>
+        <b-col class="mx-auto col-lg-8 col-md-10">
+          <router-link :to="'/blog/' + post.slug">
+            <b-card class="post-card border-0 rounded">
+              <b-img
+                style="border-radius: 0.5rem"
+                :src="post.featured_image"
+                fluid
+              ></b-img>
 
               <b-card-title class="h2 text-dark mt-4 font-weight-bold">{{
                 post.title
               }}</b-card-title>
-              <b-card-text class="text-monospace text-secondary">
+              <b-card-text class="mb-2 text-monospace text-secondary">
                 {{ post.summary }}
               </b-card-text>
+              <div>
+                <span class="mr-2 badge badge-pill badge-primary">Example</span>
+                <span class="mr-2 badge badge-pill badge-primary">Example</span>
+              </div>
               <small class="font-italic text-muted">{{ post.published }}</small>
-            </router-link>
-          </b-card>
+            </b-card>
+          </router-link>
         </b-col>
       </b-row>
     </div>
@@ -68,7 +75,15 @@ hr.blog-hr {
 }
 
 .card-body {
-  padding: 0;
   margin-bottom: 24px;
+  --bg-opacity: 1;
+  background-color: rgba(248, 250, 252, var(--bg-opacity));
+  border-radius: 0.5rem;
+  transition: 0.6s;
+}
+
+.card-body:hover {
+  background-color: #ebedf0;
+  text-decoration: none;
 }
 </style>
