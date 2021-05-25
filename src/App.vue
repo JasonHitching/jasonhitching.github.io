@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" variant="dark" type="dark">
+    <b-navbar class="navbar-top" toggleable="lg">
       <b-container>
         <b-navbar-brand class="text-monospace" to="/">
           Jason Hitching
@@ -22,19 +22,19 @@
       <button v-on:click="scrollToTop" id="backToTop">☝️</button>
     </b-row>
 
-    <footer style="background-color: #343a40" class="border-top">
+    <footer class="border-top">
       <b-container class="text-center">
         <b-navbar class="p-0">
           <b-navbar-nav class="mx-auto">
             <b-nav-item
               style="font-size: 2rem"
               href="https://github.com/JasonHitching"
-              ><i class="bi bi-github text-white"></i
+              ><i class="bi bi-github"></i
             ></b-nav-item>
             <b-nav-item
               style="font-size: 2rem"
               href="https://www.linkedin.com/in/jason-hitching-2678b514a/"
-              ><i class="bi bi-linkedin text-white"></i
+              ><i class="bi bi-linkedin"></i
             ></b-nav-item>
           </b-navbar-nav>
         </b-navbar>
@@ -81,6 +81,14 @@ export default {
   font-size: 20px;
   line-height: 48px;
   width: 48px;
+}
+
+.navbar-top {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+.footer::before {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
 
 .button-contain {
