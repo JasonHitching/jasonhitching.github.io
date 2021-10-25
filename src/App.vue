@@ -1,11 +1,16 @@
 <template>
   <div>
+    <div style="background-color: #183042">
+      <b-nav align="right">
+          <b-nav-item><b-icon-linkedin variant="light"></b-icon-linkedin></b-nav-item>
+          <b-nav-item><b-icon-github variant="light"></b-icon-github></b-nav-item>
+      </b-nav>
+    </div>
     <b-navbar class="navbar-top" toggleable="lg">
       <b-container>
         <b-navbar-brand class="text-monospace" to="/">
           Jason Hitching
         </b-navbar-brand>
-
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="mt-2 mb-2 ml-auto text-monospace">
@@ -19,7 +24,13 @@
     </b-navbar>
     <router-view class="content" />
     <b-row align-h="end" class="mr-3 mb-3">
-      <button v-on:click="scrollToTop" id="backToTop">☝️</button>
+      <button
+        style="width: 60px; height: 60px"
+        v-on:click="scrollToTop"
+        id="backToTop"
+      >
+        ☝️
+      </button>
     </b-row>
 
     <footer class="border-top">

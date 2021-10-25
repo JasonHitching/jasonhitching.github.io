@@ -13,7 +13,8 @@
     "buttercms": "^1.2.7",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.11.5",
