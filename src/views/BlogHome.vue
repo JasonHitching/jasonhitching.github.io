@@ -1,49 +1,33 @@
 <template>
-  <div>
-    <div class="text-center mx-auto">
-      <b-img fluid src="../assets/blog-header.png"></b-img>
-      <!-- <div style="border-top: 1px solid black; border-bottom: 1px solid black">
-        <h1 class="display-4"><b>Blog</b></h1>
-      </div>
-      <p class="lead mt-3">Blog about all things bloggy</p> -->
+  <b-container class="mt-5">
+    <div v-for="(post, index) in posts" :key="post.slug + '_' + index">
+      <b-row>
+        <b-col class="mx-auto col-lg-8 col-md-10">
+          <router-link :to="'/blog/' + post.slug">
+            <b-card class="post-card border-0 rounded">
+              <b-img
+                style="border-radius: 0.5rem"
+                :src="post.featured_image"
+                fluid
+              ></b-img>
+
+              <b-card-title class="h2 text-dark mt-4 font-weight-bold">{{
+                post.title
+              }}</b-card-title>
+              <b-card-text class="mb-2 text-monospace text-secondary">
+                {{ post.summary }}
+              </b-card-text>
+              <div>
+                <span class="mr-2 badge badge-pill badge-primary">Example</span>
+                <span class="mr-2 badge badge-pill badge-primary">Example</span>
+              </div>
+              <small class="font-italic text-muted">{{ post.published }}</small>
+            </b-card>
+          </router-link>
+        </b-col>
+      </b-row>
     </div>
-
-    <b-container>
-      <div v-for="(post, index) in posts" :key="post.slug + '_' + index">
-        <b-row>
-          <b-col class="mx-auto col-lg-8 col-md-10">
-            <router-link :to="'/blog/' + post.slug">
-              <b-card class="post-card border-0 rounded">
-                <b-img
-                  style="border-radius: 0.5rem"
-                  :src="post.featured_image"
-                  fluid
-                ></b-img>
-
-                <b-card-title class="h2 text-dark mt-4 font-weight-bold">{{
-                  post.title
-                }}</b-card-title>
-                <b-card-text class="mb-2 text-monospace text-secondary">
-                  {{ post.summary }}
-                </b-card-text>
-                <div>
-                  <span class="mr-2 badge badge-pill badge-primary"
-                    >Example</span
-                  >
-                  <span class="mr-2 badge badge-pill badge-primary"
-                    >Example</span
-                  >
-                </div>
-                <small class="font-italic text-muted">{{
-                  post.published
-                }}</small>
-              </b-card>
-            </router-link>
-          </b-col>
-        </b-row>
-      </div>
-    </b-container>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -76,13 +60,13 @@ export default {
 </script>
 
 <style scoped>
-hr.blog-hr {
+/* hr.blog-hr {
   border: 0;
   height: 0;
   margin-bottom: 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */
 
 .card-body {
   margin-bottom: 24px;
@@ -94,6 +78,7 @@ hr.blog-hr {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-    background-color: #FAF3F3;
+  border-radius: 10px;
+  background-color: #ccc9c93a;
 }
 </style>

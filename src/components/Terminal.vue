@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-card
-      style="height: 200px; background-color: #183042"
+      style="height: 238px; background-color: #fefbf3"
       header="🗂️ personal-portfolio -zsh 80x24"
       body-text-variant="success"
       header-bg-variant="secondary"
@@ -11,7 +11,8 @@
       <div>
         <vue-typed-js :showCursor="false" :strings="['Hey, I\'m Jason']">
           <strong
-            ><p class="text-monospace">$ <span class="typing"></span></p
+            ><p class="text-monospace terminal-font">
+              $ <span class="typing"></span></p
           ></strong>
         </vue-typed-js>
       </div>
@@ -19,9 +20,20 @@
         <vue-typed-js
           :startDelay="2000"
           :showCursor="false"
-          :strings="['$ a budding software engineer']"
+          :strings="['$ a software engineering masters graduate']"
         >
-          <strong><p class="text-monospace typing"></p></strong>
+          <strong><p class="text-monospace terminal-font typing"></p></strong>
+        </vue-typed-js>
+      </div>
+      <div>
+        <vue-typed-js
+          :startDelay="5000"
+          :showCursor="false"
+          :strings="[
+            '$ currently searching for a junior/graduate developer position!'
+          ]"
+        >
+          <strong><p class="text-monospace terminal-font typing"></p></strong>
         </vue-typed-js>
       </div>
     </b-card>
@@ -34,4 +46,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.terminal-font {
+  font-size: 20px;
+  color: #03cc90;
+}
+</style>

@@ -1,15 +1,17 @@
 <template>
   <div>
-    <div style="background-color: #183042">
+    <div class="pr-3" style="background-color: white">
       <b-nav align="right">
-          <b-nav-item><b-icon-linkedin variant="light"></b-icon-linkedin></b-nav-item>
-          <b-nav-item><b-icon-github variant="light"></b-icon-github></b-nav-item>
+        <b-nav-item
+          ><b-icon-linkedin variant="light"></b-icon-linkedin
+        ></b-nav-item>
+        <b-nav-item><b-icon-github variant="light"></b-icon-github></b-nav-item>
       </b-nav>
     </div>
-    <b-navbar class="navbar-top" toggleable="lg">
+    <b-navbar class="navbar-top" toggleable="lg" type="dark">
       <b-container>
         <b-navbar-brand class="text-monospace" to="/">
-          Jason Hitching
+          Jason<span class="dash-span">//</span>Hitching
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -75,6 +77,11 @@ export default {
 </script>
 
 <style>
+.dash-span {
+  color: #03cc90;
+  font-size: 25px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -96,6 +103,7 @@ export default {
 
 .navbar-top {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  background: #353849;
 }
 
 .footer::before {
