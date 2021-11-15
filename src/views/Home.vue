@@ -15,7 +15,7 @@
           aspiring developer!
         </p>
       </b-col>
-      <b-col md="12" lg="6">
+      <b-col md="11" lg="6">
         <Terminal center />
       </b-col>
       <b-col sm="12" lg="5" md="12">
