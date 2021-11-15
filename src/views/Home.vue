@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <div class="intro-section">
-      <b-row align-v="center">
-        <b-col class="col-lg-6 ml-5">
-          <Terminal />
-        </b-col>
-        <b-col>
-          <b-img center src="../assets/jason.png"></b-img>
-        </b-col>
-      </b-row>
-      <hr class="mt-0" />
-    </div>
-  </div>
+  <b-container class="intro-section" fluid>
+    <b-row align-v="center">
+      <b-col class="col-lg-6 col-md-12 ml-5 pl-5">
+        <Terminal />
+      </b-col>
+      <b-col col-md-12 col-sm-12>
+        <b-img fluid left src="../assets/jason.png"></b-img>
+      </b-col>
+    </b-row>
+    <hr class="mt-0" />
+  </b-container>
 </template>
 
 <script>
@@ -33,7 +31,7 @@ export default {
 .hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 </style>

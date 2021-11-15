@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-card
-      style="height: 238px; background-color: #fefbf3"
+      style="height: 300px; background-color: #fefbf3"
       header="🗂️ personal-portfolio -zsh 80x24"
       body-text-variant="success"
       header-bg-variant="secondary"
