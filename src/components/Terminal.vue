@@ -1,5 +1,5 @@
 <template>
-  <div class="d-none d-md-block">
+  <div class="d-none d-sm-block mt-md-5">
     <b-card
       style="height: 300px; background-color: #fefbf3"
       header="🗂️ personal-portfolio -zsh 80x24"
