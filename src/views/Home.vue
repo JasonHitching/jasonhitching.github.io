@@ -1,14 +1,13 @@
 <template>
   <b-container class="intro-section" fluid>
-    <b-row align-v="center">
-      <b-col class="col-lg-6 col-md-12 ml-5 pl-5">
-        <Terminal />
+    <b-row align-v="center" align-h="center">
+      <b-col md="12" lg="6">
+        <Terminal center />
       </b-col>
-      <b-col col-md-12 col-sm-12>
-        <b-img fluid left src="../assets/jason.png"></b-img>
+      <b-col sm="12" lg="5" md="12">
+        <b-img center fluid src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
-    <hr class="mt-0" />
   </b-container>
 </template>
 
@@ -26,6 +25,7 @@ export default {
 <style scoped>
 .intro-section {
   background-color: #353849;
+  min-height: 0px !important;
 }
 
 .hr {

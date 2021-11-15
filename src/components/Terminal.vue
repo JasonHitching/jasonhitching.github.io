@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <div class="d-none d-md-block">
     <b-card
       style="height: 300px; background-color: #fefbf3"
       header="🗂️ personal-portfolio -zsh 80x24"
@@ -37,7 +37,7 @@
         </vue-typed-js>
       </div>
     </b-card>
-  </b-container>
+  </div>
 </template>
 
 <script>
