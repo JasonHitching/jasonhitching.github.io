@@ -22,6 +22,24 @@
         <b-img center fluid src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
+    <b-row style="background-color: #232734">
+      <b-col class="p-5">
+        <h4 class="text-white">MATURE GRADUATE 👴, PROGRAMMER, BORN 1994</h4>
+        <p class="text-light lead mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <b-button variant="outline-primary">Check out my CV!</b-button>
+      </b-col>
+      <b-col class="p-5">
+        <h4 style="color: white">MY HANDY SKILLSET</h4>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
