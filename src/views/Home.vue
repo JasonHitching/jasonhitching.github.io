@@ -23,9 +23,9 @@
       </b-col>
     </b-row>
     <b-row style="background-color: #232734">
-      <b-col class="p-5">
+      <b-col class="p-5 ml-4">
         <h4 class="text-white">MATURE GRADUATE 👴, PROGRAMMER, BORN 1994</h4>
-        <p class="text-light lead mt-3">
+        <p class="p-3 text-light lead mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -33,11 +33,43 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
+          <b-button class="mt-3" variant="outline-primary"
+            >Check out my CV!</b-button
+          >
         </p>
-        <b-button variant="outline-primary">Check out my CV!</b-button>
       </b-col>
       <b-col class="p-5">
         <h4 style="color: white">MY HANDY SKILLSET</h4>
+        <div class="p-3 mt-4 d-flex flex-row flex-wrap">
+          <img
+            class="stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
+          />
+          <img
+            class="stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+          />
+          <img
+            class="stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          />
+          <img
+            class="stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
+          />
+          <img
+            class="stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          />
+          <img
+            class="mt-4 stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+          />
+          <img
+            class="mt-4 stack-tech"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+          />
+        </div>
       </b-col>
     </b-row>
   </b-container>
@@ -55,6 +87,18 @@ export default {
 </script>
 
 <style scoped>
+.stack-tech {
+  filter: grayscale(100%);
+  margin-left: 30px;
+  height: 70px;
+  width: 70px;
+}
+
+.stack-tech:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
 .intro-section {
   background-color: #353849;
   min-height: 0px !important;
