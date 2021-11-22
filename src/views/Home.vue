@@ -26,9 +26,9 @@
       </b-col>
     </b-row>
     <b-row style="background-color: #232734" class="intro p-4 p-lg-5 p-sm-4">
-      <b-col class="mr-lg-5">
+      <b-col lg="6" class="mr-lg-5">
         <h4 class="text-white">MATURE GRADUATE 👴, PROGRAMMER, BORN 1994</h4>
-        <p class="pl-3 text-light lead mt-3">
+        <p class="text-white lead mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -37,13 +37,11 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <b-button class="ml-3" variant="outline-primary"
-          >Check out my CV!</b-button
-        >
+        <b-button class="btn btn-primary">Check out my CV!</b-button>
       </b-col>
       <b-col lg="5" class="mt-sm-5 mt-lg-0 mt-5">
         <h4 class="text-white">MY HANDY SKILLSET</h4>
-        <div class="my-techs p-3 d-flex flex-row flex-wrap">
+        <div class="mt-4 my-techs d-flex flex-row flex-wrap">
           <img
             class="stack-tech"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
@@ -75,6 +73,11 @@
         </div>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col>
+        <div><h1>hi</h1></div>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -92,12 +95,12 @@ export default {
 <style scoped>
 .my-techs {
   row-gap: 2rem;
+  gap: 20px;
   grid-row-gap: 2rem;
 }
 
 .stack-tech {
   filter: grayscale(100%);
-  margin-left: 30px;
   height: 70px;
   width: 70px;
 }

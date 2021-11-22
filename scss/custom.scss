@@ -1,0 +1,14 @@
+$navbar-dark-color: white;
+$navbar-dark-hover-color: #03cc90;
+$navbar-nav-link-padding-x: 1.3rem;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// BootstrapVue and its default variables
+@import "../node_modules/bootstrap-vue/src/index.scss";

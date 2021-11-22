@@ -76,7 +76,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./scss/custom.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 .dash-span {
   color: #03cc90;
   font-size: 25px;
