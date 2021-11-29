@@ -9,9 +9,9 @@
       header-tag="header"
     >
       <div>
-        <vue-typed-js :showCursor="false" :strings="['Hey, I\'m Jason']">
+        <vue-typed-js :showCursor="false" :strings="['Hey, I\'m Jason...']">
           <strong
-            ><p class="text-monospace terminal-font">
+            ><p class="text-monospace text-success h4">
               $ <span class="typing"></span></p
           ></strong>
         </vue-typed-js>
@@ -22,7 +22,7 @@
           :showCursor="false"
           :strings="['$ a software engineering masters graduate']"
         >
-          <strong><p class="text-monospace terminal-font typing"></p></strong>
+          <strong><p class="text-monospace typing h4"></p></strong>
         </vue-typed-js>
       </div>
       <div>
@@ -33,7 +33,7 @@
             '$ currently searching for a junior/graduate developer position!'
           ]"
         >
-          <strong><p class="text-monospace terminal-font typing"></p></strong>
+          <strong><p class="text-monospace typing h4"></p></strong>
         </vue-typed-js>
       </div>
     </b-card>
@@ -46,9 +46,4 @@ export default {
 };
 </script>
 
-<style>
-.terminal-font {
-  font-size: 20px;
-  color: #03cc90;
-}
-</style>
+<style></style>
