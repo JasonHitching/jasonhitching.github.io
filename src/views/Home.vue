@@ -37,11 +37,11 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <b-button class="btn btn-primary">Check out my CV!</b-button>
+        <button class="btn-primary basic">Check out my CV!</button>
       </b-col>
       <b-col lg="5" class="mt-sm-5 mt-lg-0 mt-5">
         <h4 class="text-white">MY HANDY SKILLSET</h4>
-        <div class="mt-4 my-techs d-flex flex-row flex-wrap">
+        <div class="p-2 mt-4 my-techs d-flex flex-row flex-wrap">
           <img
             class="stack-tech"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
@@ -73,9 +73,22 @@
         </div>
       </b-col>
     </b-row>
-    <b-row>
+    <b-row flex>
       <b-col>
-        <div><h1>hi</h1></div>
+        <h1 class="text-white">Work Experience</h1>
+        <ul class="text-white">
+          <li>Cogent Technology</li>
+          <li>Country Tipis</li>
+          <li>Essendon Country Club</li>
+        </ul>
+      </b-col>
+      <b-col>
+        <h1 class="text-white">Education</h1>
+        <ul class="text-white">
+          <li>University of Hertfordshire</li>
+          <li>University of Hertfordshire</li>
+          <li>West Suffolk College</li>
+        </ul>
       </b-col>
     </b-row>
   </b-container>
