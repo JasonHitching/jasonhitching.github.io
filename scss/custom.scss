@@ -1,7 +1,31 @@
+// Navigation bar variables
 $navbar-dark-color: white;
 $navbar-dark-hover-color: #03cc90;
 $navbar-nav-link-padding-x: 1.3rem;
+$font-family-base: "Inter", sans-serif;
+$btn-background: #03cc90;
+$btn-border: #03cc90;
+$btn-color: #fff;
 
+@mixin button-variant($background, $border, $color) {
+  background-color: $btn-background;
+  border: 2px solid $btn-border;
+  border-radius: 5px;
+  color: #fff;
+
+  &:hover {
+    background-color: $btn-background;
+    opacity: 90%;
+  }
+}
+
+.btn-primary {
+  &.basic {
+    @include button-variant($btn-background, $btn-border, $btn-color);
+  }
+}
+
+// Imports
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
