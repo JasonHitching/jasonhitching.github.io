@@ -6,6 +6,7 @@ $font-family-base: "Inter", sans-serif;
 $btn-background: #03cc90;
 $btn-border: #03cc90;
 $btn-color: #fff;
+$success: #03cc90;
 
 @mixin button-variant($background, $border, $color) {
   background-color: $btn-background;
