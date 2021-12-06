@@ -71,8 +71,8 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
           />
         </div>
-      </b-col> </b-row
-    >ƒa
+      </b-col>
+    </b-row>
     <project-section />
   </b-container>
 </template>

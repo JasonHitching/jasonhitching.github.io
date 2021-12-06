@@ -1,10 +1,14 @@
 <template>
   <div>
-    <b-row>
-      <b-col class="d-flex justify-content-center"><project-card /> </b-col>
-      <b-col class="d-flex justify-content-center"><project-card /> </b-col>
-      <b-col class="d-flex justify-content-center"><project-card /> </b-col
-    ></b-row>
+    <b-row class="d-flex justify-content-center space-between pt-4 pb-3">
+      <b-col lg="3"><project-card /> </b-col>
+      <b-col lg="3"><project-card /> </b-col>
+      <b-col lg="3"><project-card /> </b-col>
+    </b-row>
+    <b-row class="d-flex justify-content-center space-between pb-3">
+      <b-col lg="3"><project-card /> </b-col>
+      <b-col lg="3"><project-card /> </b-col>
+    </b-row>
   </div>
 </template>
 
@@ -18,4 +22,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.space-between {
+  gap: 80px;
+}
+</style>
