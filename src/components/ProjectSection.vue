@@ -1,13 +1,12 @@
 <template>
   <div>
     <b-row class="d-flex justify-content-center space-between pt-4 pb-3">
-      <b-col lg="3"><project-card /> </b-col>
-      <b-col lg="3"><project-card /> </b-col>
-      <b-col lg="3"><project-card /> </b-col>
-    </b-row>
-    <b-row class="d-flex justify-content-center space-between pb-3">
-      <b-col lg="3"><project-card /> </b-col>
-      <b-col lg="3"><project-card /> </b-col>
+      <b-col lg="3"
+        ><project-card
+          cardTitle="My Portfolio"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit."
+        />
+      </b-col>
     </b-row>
   </div>
 </template>

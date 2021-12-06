@@ -6,18 +6,20 @@
       alt="#"
     />
     <div class="card-body">
-      <h5 class="card-title">My project</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
+      <h5 class="card-title">{{ cardTitle }}</h5>
+      <p class="card-text">{{ cardText }}</p>
       <span class="badge rounded-pill bg-white text-success">Java</span>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    cardTitle: String,
+    cardText: String
+  }
+};
 </script>
 
 <style>
