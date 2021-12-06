@@ -71,18 +71,21 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
           />
         </div>
-      </b-col>
-    </b-row>
+      </b-col> </b-row
+    >ƒa
+    <project-section />
   </b-container>
 </template>
 
 <script>
 import Terminal from "../components/Terminal";
+import ProjectSection from "../components/ProjectSection.vue";
 
 export default {
   name: "Home",
   components: {
-    Terminal
+    Terminal,
+    ProjectSection
   }
 };
 </script>
