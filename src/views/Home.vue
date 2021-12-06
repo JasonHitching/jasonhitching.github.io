@@ -73,24 +73,6 @@
         </div>
       </b-col>
     </b-row>
-    <b-row flex>
-      <b-col>
-        <h1 class="text-white">Work Experience</h1>
-        <ul class="text-white">
-          <li>Cogent Technology</li>
-          <li>Country Tipis</li>
-          <li>Essendon Country Club</li>
-        </ul>
-      </b-col>
-      <b-col>
-        <h1 class="text-white">Education</h1>
-        <ul class="text-white">
-          <li>University of Hertfordshire</li>
-          <li>University of Hertfordshire</li>
-          <li>West Suffolk College</li>
-        </ul>
-      </b-col>
-    </b-row>
   </b-container>
 </template>
 
@@ -106,6 +88,14 @@ export default {
 </script>
 
 <style scoped>
+.coloured-bullet {
+  list-style-position: inside;
+}
+
+.coloured-bullet ::marker {
+  color: #03cc90;
+}
+
 .my-techs {
   row-gap: 2rem;
   gap: 20px;
