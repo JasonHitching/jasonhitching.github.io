@@ -1,14 +1,26 @@
 <template>
   <div class="card text-white" style="width: 20rem; background-color: #232734">
-    <img
-      src="https://picsum.photos/600/300/?image=25"
-      class="card-img-top"
-      alt="#"
-    />
+    <img src="../assets/project.jpg" class="card-img-top" alt="#" />
     <div class="card-body">
       <h5 class="card-title">{{ cardTitle }}</h5>
       <p class="card-text">{{ cardText }}</p>
-      <span class="badge rounded-pill bg-white text-success">Java</span>
+      <ul class="pl-0">
+        <span
+          v-for="tech in techUsed"
+          v-bind:key="tech"
+          class="
+            outlined-badge
+            badge
+            text-success
+            p-1
+            mr-2
+            font-weight-light
+            text-monospace
+          "
+        >
+          {{ tech }}
+        </span>
+      </ul>
     </div>
   </div>
 </template>
@@ -17,13 +29,15 @@
 export default {
   props: {
     cardTitle: String,
-    cardText: String
+    cardText: String,
+    techUsed: Array
   }
 };
 </script>
 
 <style>
-.proj-card {
-  border-radius: 100px;
+.outlined-badge {
+  border: 1px solid #03cc90;
+  border-radius: 5px;
 }
 </style>
