@@ -27,7 +27,9 @@
     </b-row>
     <b-row style="background-color: #232734" class="intro p-4 p-lg-5 p-sm-4">
       <b-col lg="6" class="mr-lg-5">
-        <h4 class="text-white">MATURE GRADUATE 👴, PROGRAMMER, BORN 1994</h4>
+        <h4 class="text-white text-monospace">
+          MATURE GRADUATE 👴, PROGRAMMER, BORN 1994
+        </h4>
         <p class="text-white lead mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -40,7 +42,7 @@
         <button class="btn-primary basic">Check out my CV!</button>
       </b-col>
       <b-col lg="5" class="mt-sm-5 mt-lg-0 mt-5">
-        <h4 class="text-white">MY HANDY SKILLSET</h4>
+        <h4 class="text-white text-monospace">MY HANDY SKILLSET</h4>
         <div class="p-2 mt-4 my-techs d-flex flex-row flex-wrap">
           <img
             class="stack-tech"
@@ -79,7 +81,7 @@
 
 <script>
 import Terminal from "../components/Terminal";
-import ProjectSection from "../components/ProjectSection.vue";
+import ProjectSection from "./ProjectSection.vue";
 
 export default {
   name: "Home",
