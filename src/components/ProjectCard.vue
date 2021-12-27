@@ -1,6 +1,6 @@
 <template>
-  <div class="card text-white" style="width: 20rem; background-color: #232734">
-    <img src="../assets/project.jpg" class="card-img-top" alt="#" />
+  <div class="card text-white" style="background-color: #232734">
+    <img src="../assets/project.svg" class="card-img-top" alt="#" />
     <div class="card-body">
       <h5 class="card-title">{{ cardTitle }}</h5>
       <p class="card-text">{{ cardText }}</p>
