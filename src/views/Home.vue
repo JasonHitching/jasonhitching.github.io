@@ -26,6 +26,7 @@
       </b-col>
     </b-row>
     <b-row
+      id="about"
       style="background-color: #232734"
       class="intro p-lg-5 p-4 p-lg-5 justify-content-center"
     >
@@ -33,7 +34,7 @@
         <h4 class="text-white text-monospace">
           Mature Master's Graduate 👴, Born in '94
         </h4>
-        <p class="text-white lead mt-3 p-0">
+        <p class="text-white lead mt-4 p-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -44,8 +45,10 @@
         </p>
         <button class="btn-primary basic">Check out my CV!</button>
       </b-col>
-      <b-col lg="4" class="mt-4 mb-4 mt-lg-0">
-        <h4 class="text-white text-monospace">Experience Using</h4>
+      <b-col lg="4" class="mt-5 mb-4 mt-lg-0">
+        <h4 class="text-center text-lg-left text-white text-monospace">
+          Experience Using
+        </h4>
         <div
           class="
             p-2
@@ -53,7 +56,7 @@
             my-techs
             d-flex
             flex-row flex-wrap
-            justify-content-center
+            justify-content-sm-center justify-content-lg-start
           "
         >
           <img
@@ -87,7 +90,7 @@
         </div>
       </b-col>
     </b-row>
-    <project-section />
+    <project-section id="projects" />
   </b-container>
 </template>
 

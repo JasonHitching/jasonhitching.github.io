@@ -42,6 +42,6 @@ export default {
 
 <style>
 .space-between {
-  gap: 60px;
+  gap: 40px;
 }
 </style>
