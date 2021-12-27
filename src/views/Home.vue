@@ -22,7 +22,7 @@
         <Terminal center />
       </b-col>
       <b-col sm="12" lg="5" md="12">
-        <b-img class="pl-md-5" center fluid src="../assets/jason.png"></b-img>
+        <b-img class="pl-lg-5" src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
     <b-row
@@ -30,7 +30,7 @@
       style="background-color: #232734"
       class="intro p-lg-5 p-4 p-lg-5 justify-content-center"
     >
-      <b-col lg="6" class="mr-lg-5 p-0">
+      <b-col lg="6" class="p-0">
         <h4 class="text-white text-monospace">
           Mature Master's Graduate 👴, Born in '94
         </h4>
@@ -45,7 +45,7 @@
         </p>
         <button class="btn-primary basic">Check out my CV!</button>
       </b-col>
-      <b-col lg="4" class="mt-5 mb-4 mt-lg-0">
+      <b-col lg="5" class="mt-5 mb-4 mt-lg-0 ml-lg-5">
         <h4 class="text-center text-lg-left text-white text-monospace">
           Experience Using
         </h4>
@@ -56,7 +56,7 @@
             my-techs
             d-flex
             flex-row flex-wrap
-            justify-content-sm-center justify-content-lg-start
+            justify-content-center
           "
         >
           <img
@@ -91,18 +91,21 @@
       </b-col>
     </b-row>
     <project-section id="projects" />
+    <contact-section id="contact" />
   </b-container>
 </template>
 
 <script>
 import Terminal from "../components/Terminal";
 import ProjectSection from "./ProjectSection.vue";
+import ContactSection from "./ContactSection.vue";
 
 export default {
   name: "Home",
   components: {
     Terminal,
-    ProjectSection
+    ProjectSection,
+    ContactSection
   }
 };
 </script>

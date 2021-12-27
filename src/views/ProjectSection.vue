@@ -26,6 +26,14 @@
           :techUsed="['Vue.js', 'Bootstrap']"
         />
       </b-col>
+      <b-col lg="3"
+        ><project-card
+          cardTitle="My Portfolio"
+          cardText="Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Consectetur adipiscing elit."
+          :techUsed="['Vue.js', 'Bootstrap']"
+        />
+      </b-col>
     </b-row>
   </div>
 </template>
