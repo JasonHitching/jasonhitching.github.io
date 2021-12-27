@@ -17,7 +17,10 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="mt-2 mb-2 ml-auto text-monospace">
             <b-nav-item to="/">home</b-nav-item>
-            <b-nav-item to="/about">about</b-nav-item>
+            <b-nav-item :to="{ path: '/', hash: 'about' }">about</b-nav-item>
+            <b-nav-item :to="{ path: '/', hash: 'projects' }"
+              >projects</b-nav-item
+            >
             <b-nav-item to="/blog/">blog</b-nav-item>
             <b-nav-item>contact me</b-nav-item>
           </b-navbar-nav>
@@ -67,6 +70,7 @@ export default {
   methods: {
     scrollToTop() {
       var rootElement = document.documentElement;
+      this.$el.id();
       rootElement.scrollTo({
         top: 0,
         behavior: "smooth"
