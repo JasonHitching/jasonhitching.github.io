@@ -35,24 +35,24 @@
       </button>
     </b-row>
 
-    <footer class="border-top">
+    <footer class="border-top coloured-footer">
       <b-container class="text-center">
         <b-navbar class="p-0">
           <b-navbar-nav class="mx-auto">
             <b-nav-item
               style="font-size: 2rem"
               href="https://github.com/JasonHitching"
-              ><i class="bi bi-github"></i
+              ><i class="bi bi-github footer-icon"></i
             ></b-nav-item>
             <b-nav-item
               style="font-size: 2rem"
               href="https://www.linkedin.com/in/jason-hitching-2678b514a/"
-              ><i class="bi bi-linkedin"></i
+              ><i class="bi bi-linkedin footer-icon"></i
             ></b-nav-item>
           </b-navbar-nav>
         </b-navbar>
 
-        <div class="mx-auto" style="width: 250px">
+        <div class="mx-auto" style="width: 200px">
           <a href="https://buttercms.com"
             ><b-img fluid src="./assets/butter.png"></b-img
           ></a>
@@ -109,8 +109,8 @@ export default {
   background: #353849;
 }
 
-.footer::before {
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+.coloured-footer {
+  background: #353849;
 }
 
 .button-contain {
@@ -120,5 +120,9 @@ export default {
 
 .content {
   min-height: calc(100vh - 170px);
+}
+
+.footer-icon {
+  color: #03cc90;
 }
 </style>
