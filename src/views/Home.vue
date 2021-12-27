@@ -1,5 +1,5 @@
 <template>
-  <b-container class="intro-section" fluid>
+  <b-container class="intro-section pt-lg-5" fluid>
     <b-row align-v="center" align-h="center">
       <b-col class="pt-3 d-block d-sm-none">
         <p
@@ -22,15 +22,18 @@
         <Terminal center />
       </b-col>
       <b-col sm="12" lg="5" md="12">
-        <b-img center fluid src="../assets/jason.png"></b-img>
+        <b-img class="pl-md-5" center fluid src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
-    <b-row style="background-color: #232734" class="intro p-4 p-lg-5 p-sm-4">
-      <b-col lg="6" class="mr-lg-5">
+    <b-row
+      style="background-color: #232734"
+      class="intro p-lg-5 p-4 p-lg-5 justify-content-center"
+    >
+      <b-col lg="6" class="mr-lg-5 p-0">
         <h4 class="text-white text-monospace">
-          MATURE GRADUATE 👴, PROGRAMMER, BORN 1994
+          Mature Master's Graduate 👴, Born in '94
         </h4>
-        <p class="text-white lead mt-3">
+        <p class="text-white lead mt-3 p-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -41,9 +44,18 @@
         </p>
         <button class="btn-primary basic">Check out my CV!</button>
       </b-col>
-      <b-col lg="5" class="mt-sm-5 mt-lg-0 mt-5">
-        <h4 class="text-white text-monospace">MY HANDY SKILLSET</h4>
-        <div class="p-2 mt-4 my-techs d-flex flex-row flex-wrap">
+      <b-col lg="4" class="mt-4 mb-4 mt-lg-0">
+        <h4 class="text-white text-monospace">Experience Using</h4>
+        <div
+          class="
+            p-2
+            mt-4
+            my-techs
+            d-flex
+            flex-row flex-wrap
+            justify-content-center
+          "
+        >
           <img
             class="stack-tech"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
@@ -93,14 +105,6 @@ export default {
 </script>
 
 <style scoped>
-.coloured-bullet {
-  list-style-position: inside;
-}
-
-.coloured-bullet ::marker {
-  color: #03cc90;
-}
-
 .my-techs {
   row-gap: 2rem;
   gap: 20px;
