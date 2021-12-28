@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import { butter } from "../buttercms";
+import { butter } from '../buttercms';
 export default {
-  name: "blog-post",
+  name: 'blog-post',
   data() {
     return {
       post: {}

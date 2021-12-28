@@ -31,13 +31,13 @@
 </template>
 
 <script>
-import { butter } from "@/buttercms.js";
+import { butter } from '@/buttercms.js';
 
 export default {
-  name: "blog-home",
+  name: 'blog-home',
   data() {
     return {
-      page_title: "Blog",
+      page_title: 'Blog',
       posts: []
     };
   },
