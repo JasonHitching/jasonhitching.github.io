@@ -26,17 +26,8 @@
       </b-container>
     </b-navbar>
     <router-view class="content" />
-    <b-row align-h="end" class="mr-3 mb-3">
-      <button
-        style="width: 60px; height: 60px"
-        v-on:click="scrollToTop"
-        id="backToTop"
-      >
-        ☝️
-      </button>
-    </b-row>
 
-    <footer class="border-top coloured-footer">
+    <footer class="coloured-footer">
       <b-container class="text-center">
         <b-navbar class="p-0">
           <b-navbar-nav class="mx-auto">
@@ -64,23 +55,12 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    scrollToTop() {
-      var rootElement = document.documentElement;
-      this.$el.id();
-      rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  }
-};
+export default {};
 </script>
 
 <style lang="scss">
-@import "./scss/custom.scss";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import './scss/custom.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .dash-span {
   color: #03cc90;

@@ -1,5 +1,5 @@
 <template>
-  <b-container class="intro-section pt-lg-5" fluid>
+  <b-container class="intro-section pt-lg-5 p-0" fluid>
     <b-row align-v="center" align-h="center">
       <b-col class="pt-3 d-block d-sm-none">
         <p
@@ -22,7 +22,7 @@
         <Terminal center />
       </b-col>
       <b-col sm="12" lg="5" md="12">
-        <b-img class="pl-lg-5" src="../assets/jason.png"></b-img>
+        <b-img class="pl-lg-5" fluid src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
     <b-row
@@ -96,12 +96,12 @@
 </template>
 
 <script>
-import Terminal from "../components/Terminal";
-import ProjectSection from "./ProjectSection.vue";
-import ContactSection from "./ContactSection.vue";
+import Terminal from '../components/Terminal';
+import ProjectSection from './ProjectSection.vue';
+import ContactSection from './ContactSection.vue';
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Terminal,
     ProjectSection,
