@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: #353849">
     <h1 class="text-white ml-lg-5">My Projects</h1>
     <b-row class="d-flex justify-content-center space-between pt-4 pb-3">
       <b-col lg="3"

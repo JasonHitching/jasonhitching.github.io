@@ -1,5 +1,5 @@
 <template>
-  <div class="row-colour pb-4">
+  <b-container fluid class="row-colour pb-4">
     <b-row class="p-4">
       <b-col lg="6">
         <h2 class="text-white">Contact Me</h2>
@@ -53,20 +53,9 @@
       </b-col>
     </b-row>
     <b-row align-h="center">
-      <button
-        style="
-          width: 70px;
-          height: 70px;
-          background-color: #353849;
-          border: solid 2px #03cc90;
-        "
-        v-on:click="scrollToTop"
-        id="backToTop"
-      >
-        ☝️
-      </button>
+      <button v-on:click="scrollToTop" id="backToTop">☝️</button>
     </b-row>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -93,6 +82,17 @@ export default {
 <style>
 .input-colour {
   background-color: #353849 !important;
+}
+
+#backToTop {
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 48px;
+  width: 70px;
+  height: 70px;
+  background-color: #353849;
+  border: solid 2px #03cc90;
 }
 
 .row-colour {
