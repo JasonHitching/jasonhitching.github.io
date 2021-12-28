@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import ProjectCard from "../components/ProjectCard.vue";
+import ProjectCard from '../components/ProjectCard.vue';
 export default {
-  name: "ProjectSection",
+  name: 'ProjectSection',
   components: {
     ProjectCard
   }
