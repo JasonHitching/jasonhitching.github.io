@@ -1,8 +1,8 @@
 <template>
   <div style="background-color: #353849">
     <h1 class="text-white ml-lg-5">My Projects</h1>
-    <b-row class="d-flex justify-content-center space-between pt-4 pb-3">
-      <b-col lg="3"
+    <b-row class="d-flex justify-content-center p-4">
+      <b-col lg="4"
         ><project-card
           cardTitle="My Portfolio"
           cardText="Lorem ipsum dolor sit
@@ -10,7 +10,7 @@
           :techUsed="['Vue.js', 'Bootstrap']"
         />
       </b-col>
-      <b-col lg="3"
+      <b-col lg="4"
         ><project-card
           cardTitle="My Portfolio"
           cardText="Lorem ipsum dolor sit
@@ -18,15 +18,7 @@
           :techUsed="['Vue.js', 'Bootstrap']"
         />
       </b-col>
-      <b-col lg="3"
-        ><project-card
-          cardTitle="My Portfolio"
-          cardText="Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Consectetur adipiscing elit."
-          :techUsed="['Vue.js', 'Bootstrap']"
-        />
-      </b-col>
-      <b-col lg="3"
+      <b-col lg="4"
         ><project-card
           cardTitle="My Portfolio"
           cardText="Lorem ipsum dolor sit
@@ -50,6 +42,6 @@ export default {
 
 <style>
 .space-between {
-  gap: 40px;
+  gap: 10px;
 }
 </style>
