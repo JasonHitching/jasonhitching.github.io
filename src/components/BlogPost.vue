@@ -1,5 +1,5 @@
 <template>
-  <b-container style="max-width: 60%">
+  <b-container class="blog-card">
     <h1>{{ post.data.title }}</h1>
     <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
     <div v-html="post.data.body"></div>
@@ -47,3 +47,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.blog-card {
+  background-color: red;
+  max-width: 60%;
+}
+</style>
