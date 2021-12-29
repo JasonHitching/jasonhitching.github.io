@@ -2,9 +2,9 @@
 $navbar-dark-color: white;
 $navbar-dark-hover-color: #03cc90;
 $navbar-nav-link-padding-x: 1.3rem;
-$font-family-base: "Inter", sans-serif;
-$btn-background: #03cc90;
-$btn-border: #03cc90;
+$font-family-base: 'Inter', sans-serif;
+$btn-background: rgba(0, 0, 0, 0.5);
+$btn-border: #fff;
 $btn-color: #fff;
 $success: #03cc90;
 
@@ -12,7 +12,6 @@ $success: #03cc90;
   background-color: $btn-background;
   border: 2px solid $btn-border;
   border-radius: 5px;
-  color: #fff;
 
   &:hover {
     background-color: $btn-background;
@@ -27,13 +26,13 @@ $success: #03cc90;
 }
 
 // Imports
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/utilities";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/utilities';
 
 // BootstrapVue and its default variables
-@import "../node_modules/bootstrap-vue/src/index.scss";
+@import '../node_modules/bootstrap-vue/src/index.scss';
