@@ -1,5 +1,6 @@
 <template>
-  <b-container fluid style="background-color: #353849" class="pt-5">
+  <b-container fluid style="background-color: #232734" class="pt-5">
+    <h1 class="text-white text-monospace blog-heading">Welcome to my blog</h1>
     <b-row class="justify-content-center">
       <b-col
         class="border border-success rounded p-4 mb-3"
@@ -65,12 +66,16 @@ export default {
 
 <style scoped>
 .post-card {
-  background-color: #232734;
+  background-color: #353849;
 }
 
 .card-body {
   transition: 0.6s;
   padding: 5px;
+}
+
+.blog-heading {
+  padding-left: 220px;
 }
 
 .card-body:hover {
