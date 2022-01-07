@@ -43,7 +43,14 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <button class="btn-primary basic">Check out my CV!</button>
+        <button
+          class="btn-primary basic border-success"
+          style="background-color: #353849"
+        >
+          <a download class="text-white" href="./assets/Jason-Hitching-CV.docx"
+            >Check out my CV!</a
+          >
+        </button>
       </b-col>
       <b-col lg="5" class="mt-5 mb-4 mt-lg-0 ml-lg-5">
         <h4 class="text-center text-lg-left text-white text-monospace">
