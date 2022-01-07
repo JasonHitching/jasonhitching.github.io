@@ -1,16 +1,18 @@
 <template>
   <b-container fluid style="background-color: #232734" class="pt-5">
-    <h1 class="text-white text-monospace blog-heading">Welcome to my blog</h1>
+    <h2 class="text-white text-monospace text-center mb-0">
+      Welcome to my blog
+    </h2>
     <b-row class="justify-content-center">
       <b-col
-        class="border border-success rounded p-4 mb-3"
+        class="border border-success rounded m-2 m-md-0 m-lg-0 p-4 mb-3"
         lg="8"
         md="10"
         v-for="(post, index) in posts"
         :key="post.slug + '_' + index"
       >
         <router-link :to="'/blog/' + post.slug">
-          <b-card fluid class="post-card rounded p-0">
+          <b-card fluid class="post-card rounded p-2">
             <b-img
               style="border-radius: 0.5rem"
               :src="post.featured_image"
