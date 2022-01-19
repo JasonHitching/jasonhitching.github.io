@@ -30,18 +30,17 @@
       style="background-color: #232734"
       class="p-lg-5 p-4 justify-content-center"
     >
-      <b-col lg="6" class="p-0">
+      <b-col lg="6" class="p-3 border border-success rounded">
         <h4 class="text-white text-monospace">
           Mature Master's Graduate 👴, Born in '94
         </h4>
-        <p class="text-white lead mt-4 p-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <p class="text-white text-monospace lead mt-4 p-0">
+          Working as an Electronics Test Technician, a Python shell script
+          arrived in my works inbox resolving a long standing bug we'd been
+          experiencing. I became intrigued and subsequently hooked into the
+          world of software development. I've sinced completed two relevant
+          degrees (BSc and MSc) and remain ever driven to work as a graduate
+          developer.
         </p>
         <button
           class="btn-primary basic border-success"
@@ -52,8 +51,20 @@
           >
         </button>
       </b-col>
-      <b-col lg="5" class="mt-5 mb-4 mt-lg-0 ml-lg-5">
-        <h4 class="text-center text-lg-left text-white text-monospace">
+      <b-col
+        lg="5"
+        class="
+          p-3
+          mt-5
+          mb-4
+          mt-lg-0
+          mb-lg-0
+          ml-lg-5
+          rounded
+          border border-success
+        "
+      >
+        <h4 class="ml-lg-2 text-center text-lg-left text-white text-monospace">
           Experience Using
         </h4>
         <div

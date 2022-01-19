@@ -2,8 +2,8 @@
   <b-container fluid class="row-colour pb-4">
     <b-row class="p-4">
       <b-col lg="6">
-        <h2 class="text-white">Contact Me</h2>
-        <p class="text-white lead">
+        <h2 class="text-white text-monospace">Contact Me</h2>
+        <p class="text-white text-monospace lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
