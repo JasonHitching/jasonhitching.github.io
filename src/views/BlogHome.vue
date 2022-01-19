@@ -3,7 +3,7 @@
     <h2 class="text-white text-monospace text-center mb-0">
       Welcome to my blog
     </h2>
-    <b-row class="justify-content-center">
+    <b-row class="justify-content-center pb-5">
       <b-col
         class="border border-success rounded m-2 m-md-0 m-lg-0 p-4 mb-3"
         lg="8"
