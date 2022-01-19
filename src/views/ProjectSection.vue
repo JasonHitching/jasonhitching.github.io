@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: #353849">
-    <h1 class="text-white ml-lg-5">My Projects</h1>
+  <div class="pt-5" style="background-color: #353849">
+    <h1 class="text-white text-monospace ml-lg-4">Projects</h1>
     <b-row class="d-flex justify-content-center p-4">
       <b-col lg="4"
         ><project-card
