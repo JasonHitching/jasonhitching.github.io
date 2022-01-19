@@ -1,7 +1,9 @@
 <template>
   <div class="pt-5" style="background-color: #353849">
-    <h1 class="text-white text-monospace ml-lg-4">Projects</h1>
-    <b-row class="d-flex justify-content-center p-4">
+    <h1 class="text-white text-center text-lg-left text-monospace ml-lg-4">
+      Projects
+    </h1>
+    <b-row class="justify-content-center p-4 ml-0 mr-0">
       <b-col lg="4"
         ><project-card
           cardTitle="My Portfolio"

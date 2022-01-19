@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="p-0">
-    <b-row class="intro-section" align-v="center" align-h="center">
+    <b-row class="intro-section no-gutters" align-v="center" align-h="center">
       <b-col class="pt-3 d-block d-sm-none">
         <p
           class="
@@ -28,7 +28,7 @@
     <b-row
       id="about"
       style="background-color: #232734"
-      class="p-lg-5 p-4 justify-content-center"
+      class="p-lg-5 p-4 justify-content-center no-gutters"
     >
       <b-col lg="6" class="p-3 border border-success rounded">
         <h4 class="text-white text-monospace">
