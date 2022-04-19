@@ -1,16 +1,15 @@
 <template>
   <b-container fluid class="row-colour pb-4">
     <b-row class="p-4">
-      <b-col lg="6">
+      <b-col lg="5">
         <h2 class="text-white text-monospace">Contact Me</h2>
         <p class="text-white text-monospace lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Feel free to reach out to me. I'm happy to hear from anybody, whether
+          you just want to reach out, connect, speak about a job position or
+          comment on the website!
         </p>
       </b-col>
-      <b-col lg="6">
+      <b-col lg="7">
         <b-form>
           <b-form-group id="name-input-group" label-for="input-2">
             <label class="text-white" for="text-password">Your name</label>
