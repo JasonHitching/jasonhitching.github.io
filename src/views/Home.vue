@@ -30,7 +30,10 @@
       style="background-color: #232734"
       class="p-lg-5 p-4 justify-content-center no-gutters"
     >
-      <b-col lg="6" class="p-3 border border-success rounded">
+      <b-col
+        lg="6"
+        class="p-3 border border-success rounded text-center text-md-left"
+      >
         <h4 class="text-white text-monospace">
           Mature Master's Graduate 👴, Born in '94
         </h4>
