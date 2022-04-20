@@ -18,10 +18,10 @@
           aspiring developer!
         </p>
       </b-col>
-      <b-col md="11" lg="6">
-        <Terminal center />
+      <b-col md="11" lg="6" class="mx-auto">
+        <Terminal />
       </b-col>
-      <b-col sm="12" lg="5" md="12">
+      <b-col sm="12" lg="5" md="12" class="text-center">
         <b-img class="pl-lg-5" fluid src="../assets/jason.png"></b-img>
       </b-col>
     </b-row>
@@ -32,6 +32,7 @@
     >
       <b-col
         lg="6"
+        xl="4"
         class="p-3 border border-success rounded text-center text-md-left"
       >
         <h4 class="text-white text-monospace">
@@ -73,7 +74,7 @@
         <div
           class="
             p-2
-            mt-4
+            m-5
             my-techs
             d-flex
             flex-row flex-wrap
