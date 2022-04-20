@@ -74,7 +74,7 @@
         <div
           class="
             p-2
-            m-4
+            m-5
             my-techs
             d-flex
             flex-row flex-wrap
