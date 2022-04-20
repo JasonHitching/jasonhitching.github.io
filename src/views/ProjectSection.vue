@@ -4,7 +4,7 @@
       Projects
     </h1>
     <b-row class="justify-content-center p-4 ml-0 mr-0">
-      <b-col lg="4"
+      <b-col lg="4" class="justify-content-center"
         ><project-card
           cardTitle="My Portfolio"
           cardText="Lorem ipsum dolor sit

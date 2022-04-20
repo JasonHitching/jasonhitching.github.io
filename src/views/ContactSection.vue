@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="row-colour pb-4">
-    <b-row class="p-4">
+    <b-row class="p-4 mx-auto justify-content-center">
       <b-col lg="5">
         <h2 class="text-white text-monospace">Contact Me</h2>
         <p class="text-white text-monospace lead">
@@ -9,7 +9,7 @@
           comment on the website!
         </p>
       </b-col>
-      <b-col lg="7">
+      <b-col xl="6" lg="7">
         <b-form>
           <b-form-group id="name-input-group" label-for="input-2">
             <label class="text-white" for="text-password">Your name</label>

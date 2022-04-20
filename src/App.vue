@@ -97,6 +97,10 @@ export default {};
 }
 
 .footer-icon {
+  color: white;
+}
+
+.footer-icon:hover {
   color: #03cc90;
 }
 </style>
