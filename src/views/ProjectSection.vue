@@ -14,18 +14,16 @@
       </b-col>
       <b-col lg="4"
         ><project-card
-          cardTitle="My Portfolio"
-          cardText="Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Consectetur adipiscing elit."
-          :techUsed="['Vue.js', 'Bootstrap']"
+          cardTitle="Reactivities"
+          cardText="'Social platform' handles back-end data and presents it on the front-end."
+          :techUsed="['React', 'NET', 'C#', 'Axios']"
         />
       </b-col>
       <b-col lg="4"
         ><project-card
-          cardTitle="My Portfolio"
-          cardText="Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Consectetur adipiscing elit."
-          :techUsed="['Vue.js', 'Bootstrap']"
+          cardTitle="SWIM (Game)"
+          cardText="Space Wars In Megalactica (Command Line Game), collaborative university project"
+          :techUsed="['Java', 'Netbeans']"
         />
       </b-col>
     </b-row>
