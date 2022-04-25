@@ -10,7 +10,7 @@
         </p>
       </b-col>
       <b-col xl="6" lg="7">
-        <b-form>
+        <b-form action="">
           <b-form-group id="name-input-group" label-for="input-2">
             <label class="text-white" for="text-password">Your name</label>
             <b-form-input

@@ -32,7 +32,7 @@
     >
       <b-col
         lg="6"
-        xl="4"
+        xl="6"
         class="p-3 border border-success rounded text-center text-md-left"
       >
         <h4 class="text-white text-monospace">
@@ -56,7 +56,7 @@
         </button>
       </b-col>
       <b-col
-        lg="5"
+        lg="5" xl="4"
         class="
           p-3
           mt-5
