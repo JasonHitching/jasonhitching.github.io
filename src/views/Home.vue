@@ -58,7 +58,7 @@
       <b-col
         lg="5" xl="4"
         class="
-          p-3
+          pt-3
           mt-5
           mb-4
           mt-lg-0

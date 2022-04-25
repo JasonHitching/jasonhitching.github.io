@@ -14,6 +14,7 @@
       </b-col>
       <b-col lg="4"
         ><project-card
+          class="mt-3"
           cardTitle="Reactivities"
           cardText="'Social platform' handles back-end data and presents it on the front-end."
           :techUsed="['React', 'NET', 'C#', 'Axios']"
@@ -21,6 +22,7 @@
       </b-col>
       <b-col lg="4"
         ><project-card
+          class="mt-3"
           cardTitle="SWIM (Game)"
           cardText="Space Wars In Megalactica (Command Line Game), collaborative university project"
           :techUsed="['Java', 'Netbeans']"
