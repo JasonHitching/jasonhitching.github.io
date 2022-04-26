@@ -1,4 +1,4 @@
-# personal-portfolio
+# Personal Portfolio Website
 
 ## Project setup
 ```
