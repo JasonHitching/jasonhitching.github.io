@@ -11,6 +11,8 @@
           cardText="Lorem ipsum dolor sit
         amet, consectetur adipiscing elit. Consectetur adipiscing elit."
           :techUsed="['Vue.js', 'Bootstrap']"
+          url="https://github.com/JasonHitching/jasonhitching.github.io"
+          imgName="portfolio-card.jpeg"
         />
       </b-col>
       <b-col lg="4"
@@ -19,6 +21,8 @@
           cardTitle="Reactivities"
           cardText="'Social platform' handles back-end data and presents it on the front-end."
           :techUsed="['React', 'NET', 'C#', 'Axios']"
+          url="https://github.com/JasonHitching/Reactivities"
+          imgName="project.svg"
         />
       </b-col>
       <b-col lg="4"
@@ -27,6 +31,8 @@
           cardTitle="SWIM (Game)"
           cardText="Space Wars In Megalactica (Command Line Game), collaborative university project"
           :techUsed="['Java', 'Netbeans']"
+          url="https://github.com/Aston13/SWIM"
+          imgName="project.svg"
         />
       </b-col>
     </b-row>

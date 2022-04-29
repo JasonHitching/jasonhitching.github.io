@@ -3,7 +3,12 @@
     class="card text-white"
     style="background-color: #232734; max-width: 100%"
   >
-    <img src="../assets/project.svg" class="card-img-top" alt="#" />
+    <img
+      :src="require('@/assets/' + imgName + '')"
+      class="card-img-top"
+      style="max-height: 450px"
+      alt="../assets/project.svg"
+    />
     <div class="card-body pt-3 pb-0">
       <h5 class="card-title">{{ cardTitle }}</h5>
       <p class="card-text pr-3">{{ cardText }}</p>
@@ -26,10 +31,7 @@
       </ul>
     </div>
     <div class="container d-flex justify-content-end">
-      <a
-        class="git-icon mb-3 mr-3"
-        href="https://github.com/JasonHitching?tab=repositories"
-      >
+      <a class="git-icon mb-3 mr-3" :href="url">
         <i class="devicon-github-original-wordmark"></i>
       </a>
     </div>
@@ -41,7 +43,9 @@ export default {
   props: {
     cardTitle: String,
     cardText: String,
-    techUsed: Array
+    techUsed: Array,
+    url: String,
+    imgName: String
   }
 };
 </script>
