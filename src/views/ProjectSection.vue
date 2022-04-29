@@ -3,9 +3,10 @@
     <h1 class="text-white text-center text-lg-left text-monospace ml-lg-4">
       Projects
     </h1>
-    <b-row class="justify-content-center p-4 ml-0 mr-0">
+    <b-row class="justify-content-center p-md-4 ml-0 mr-0">
       <b-col lg="4" class="justify-content-center"
         ><project-card
+          class="mt-3"
           cardTitle="My Portfolio"
           cardText="Lorem ipsum dolor sit
         amet, consectetur adipiscing elit. Consectetur adipiscing elit."
