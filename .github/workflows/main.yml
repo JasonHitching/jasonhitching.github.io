@@ -16,11 +16,13 @@ jobs:
       - name: Check branch name
         run: |
           branch_name=$(git rev-parse --abbrev-ref HEAD)
-          if [[ "$branch_name" == feature/* ]]; then
-            echo "Branch name is valid."
-          else
-            echo "Invalid branch name. It should start with 'feature/'."
-            exit 1
-          fi
-    
-    
+          
+          prefix=$(echo "$branch_name" | cut -d'/' -f1)
+          lowercase_prefix=$(echo "$prefix" | tr '[:upper:]' '[:lower:]')
+
+          if [[ "$branch_name" == */* && "$lowercase_prefix" == "feature" ]]; then
+            if [[ "$branch_name" == "Feature" ]]; then
+              echo "Feature/ is invalid"
+              exit 1
+            else
+              echo "Branch name is valid"
